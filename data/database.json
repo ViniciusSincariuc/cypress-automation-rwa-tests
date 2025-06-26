@@ -74,6 +74,50 @@
       "balance": 49474,
       "createdAt": "2023-12-07T04:39:38.383Z",
       "modifiedAt": "2024-03-07T00:07:36.510Z"
+    },
+    {
+      "id": "SavTUFLHa",
+      "uuid": "4ac9c9a2-0335-4ec1-afeb-58a99c09efcd",
+      "firstName": "antonio",
+      "lastName": "alfredo",
+      "username": "antonio",
+      "password": "$2a$10$XIzlfslCG9tDcFXQUl5ik.01sTKK5rwz.4bAfVftiRR0Al8.Wg6ni",
+      "balance": 0,
+      "createdAt": "2025-06-26T03:33:32.843Z",
+      "modifiedAt": "2025-06-26T03:33:32.843Z"
+    },
+    {
+      "id": "HEstJHsRR",
+      "uuid": "b7dff0f2-9e10-48f6-83d8-0f6472d9a22a",
+      "firstName": "s",
+      "lastName": "d",
+      "username": "ss",
+      "password": "$2a$10$mN/.TJJCkuBfxaMs4BMKve5Lo3CBH.M/BjvAeGYQ4PAVOlJI9GpnK",
+      "balance": 0,
+      "createdAt": "2025-06-26T03:34:28.209Z",
+      "modifiedAt": "2025-06-26T03:34:28.209Z"
+    },
+    {
+      "id": "CdQy5P6vt",
+      "uuid": "a648cd97-b888-4e17-9c30-0877c51cf005",
+      "firstName": "Sushi",
+      "lastName": "Roberto",
+      "username": "sushizinho",
+      "password": "$2a$10$v55NbCJpXISpshvkSMXUt./RJGIHswBJOCbpzCweR.l1g7pS1.ENO",
+      "balance": 0,
+      "createdAt": "2025-06-26T05:19:45.411Z",
+      "modifiedAt": "2025-06-26T05:19:45.411Z"
+    },
+    {
+      "id": "3yNiMXQBI",
+      "uuid": "27a7805f-fd33-4865-8ea8-2c4f6e969453",
+      "firstName": "2",
+      "lastName": "2",
+      "username": "2",
+      "password": "$2a$10$ci.Rrz81DTyeQl0h0lOQguqClNeSs.e1RT9gzRb382nCn5.51HQ6.",
+      "balance": 0,
+      "createdAt": "2025-06-26T05:28:09.528Z",
+      "modifiedAt": "2025-06-26T05:28:09.528Z"
     }
   ],
   "contacts": [
