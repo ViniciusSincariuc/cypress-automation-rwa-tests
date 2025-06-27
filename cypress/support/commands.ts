@@ -325,6 +325,27 @@ Cypress.Commands.add("database", (operation, entity, query, logTask = false) => 
   });
 });
 
+Cypress.Commands.add('skipOnboardingIfVisible', () => {
+  cy.get('body').then(($body) => {
+    if ($body.find("[data-test='user-onboarding-next']").length > 0) {
+      cy.get("[data-test='user-onboarding-next']").click()
+    }
+  })
+})
+
+Cypress.Commands.add('fillBankAccountIfRequired', (acc) => {
+  cy.get('body').then(($body) => {
+    if ($body.find('#bankaccount-bankName-input').length > 0) {
+      cy.get('#bankaccount-bankName-input').type(acc.conta)
+      cy.get('#bankaccount-routingNumber-input').type(acc.rNumber)
+      cy.get('#bankaccount-accountNumber-input').type(acc.aNumber)
+      cy.get('[data-test="bankaccount-submit"]').click()
+      cy.get("[data-test='user-onboarding-next']").click()
+    }
+  })
+})
+
+
 Cypress.Commands.add("loginByGoogleApi", () => {
   cy.log("Logging in to Google");
 
@@ -363,3 +384,20 @@ Cypress.Commands.add("loginByGoogleApi", () => {
     });
   });
 });
+
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      fillBankAccountIfRequired(acc: { conta: string, rNumber: string, aNumber: string }): Chainable<void>
+    }
+  }
+}
+
+
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      skipOnboardingIfVisible(): Chainable<void>
+    }
+  }
+}

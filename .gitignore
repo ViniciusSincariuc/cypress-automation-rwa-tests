@@ -52,3 +52,4 @@ amplifytools.xcconfig
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+cypress/TestEx2/FeaturesEx2.cy.js
